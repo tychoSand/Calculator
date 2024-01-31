@@ -6,6 +6,11 @@ public class Main {
     public static double number1 = 0;
     public static double number2 = 0;
 
+    public static int currentOption = -1; //dsr
+
+    public static final int optionSum = 0; //ddsr
+    public static final int optionSubtract = optionSum + 1; //ddsr
+
 
     public static void main (String[]args) {
 
@@ -33,14 +38,27 @@ public class Main {
     protected double percentage(double x, double y) {
         return x % y ;
     }
-    protected static void scannerNumbers () { //ddsr
+    protected static void scannerNumbers() { //ddsr
         Scanner scan = new Scanner (System.in);
+
+        System.out.println("Que quieres hacer?");
+        System.out.println("Sumar 0");
+        System.out.println("Restar 1");
+        currentOption = scan.nextInt();
+
         System.out.println("Dame tu primer numero: ");
+
+
         number1 = scan.nextDouble();
         System.out.println("Dame tu segundo numero: ");
         number2 = scan.nextDouble();
+        double result = 0;
 
-        double result = sum(number1,number2);
+        switch (currentOption) {
+            case optionSum:
+                result = sum(number1, number2);
+                break;
+        }
         System.out.println("el resultado es: "+result);
 
     }
