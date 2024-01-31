@@ -5,10 +5,6 @@ public class Main {
     public static void main (String[]args) {
 
         System.out.println("My calculator") ;
-        System.out.println("My calculator") ;
-        System.out.println("My calculator") ;
-        System.out.println("My calculator") ;
-        System.out.println("My calculator") ;
 
         Main ivan = new Main() ;
         Main manuel = new Main() ;
