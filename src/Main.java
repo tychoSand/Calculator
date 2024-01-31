@@ -9,7 +9,7 @@ public class Main {
 
     public static void main (String[]args) {
 
-        testingCode();
+        testingCode(); //ddsr
     }
 
     // sum method
@@ -32,7 +32,7 @@ public class Main {
     protected double percentage(double x, double y) {
         return x % y ;
     }
-    protected void scannerNumbers () {
+    protected void scannerNumbers () { //ddsr
         Scanner scan = new Scanner (System.in);
         System.out.println("Dame tu primer numero: ");
         number1 = scan.nextDouble();
