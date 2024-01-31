@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 //Calculator Jauregui 0.1
 public class Main {
     public int test = 0 ;
+    public double number1 = 0;
+    public double number2 = 0;
+
 
     public static void main (String[]args) {
 
@@ -55,5 +60,9 @@ public class Main {
     protected double percentage(double x, double y) {
         return x % y ;
     }
-
+    protected void scannerNumbers () {
+        Scanner scan = new Scanner (System.in);
+        System.out.println("Dame tu primer numero: ");
+        number1 = scan.nextDouble();
+    }
 }
