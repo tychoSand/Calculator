@@ -65,17 +65,23 @@ public class Main {
         //System.out.println("Exit 6");// Closing program
         currentOption = scan.nextInt();
 
-        if (currentOption == optionClose) {//
+        if (currentOption == optionClose || currentOption > optionClose) {//
+            if (currentOption > optionClose){
+                System.out.println("escoje las opciones indicadas");
+            }
             System.out.println("Closing the calculator");
-            return ;
+            System.exit(0);
         }
+
+        // || OR (este o este)
+        // && AND (este y este)
+        // !  no se tiene que cumplir la condicion, (este no)
 
         System.out.println("Choose your first number: ");
         number1 = scan.nextDouble();
         System.out.println("Choose your second number: ");
         number2 = scan.nextDouble();
         double result = 0;
-
 
         switch (currentOption) {
             case optionSum:
@@ -93,13 +99,6 @@ public class Main {
             case optionPercentage:
                 result = percentage(number1, number2);
                 break;
-            case optionClose:
-                System.exit(0);
-                break;
-            default:
-                System.out.println("Invalid option");
-                break ;
-
         }
 
 
