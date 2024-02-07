@@ -24,10 +24,10 @@ public class Main {
     }
 
     // sum method
-    protected static double sum(double x, double y) {
-
-        return x + y;
-    }
+//    protected static double sum(double x, double y) {
+//
+//        return x + y;
+//    }
 
     // subtract method
     protected static double subtract(double x, double y) {
@@ -86,7 +86,8 @@ public class Main {
 
         switch (currentOption) {
             case optionSum:
-                result = sum(number1, number2);
+                Suma  variableSuma = new Suma();
+                result = variableSuma.Operation(number1,number2);
                 break;
             case optionSubtract:
                 result = subtract(number1, number2);
