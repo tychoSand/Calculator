@@ -83,11 +83,13 @@ public class Main {
         System.out.println("Choose your second number: ");
         number2 = scan.nextDouble();
         double result = 0;
+        String message = "";
 
         switch (currentOption) {
             case optionSum:
                 Suma  variableSuma = new Suma();
-                result = variableSuma.Operation(number1,number2);
+                result = variableSuma.calculate(number1,number2);
+                message = variableSuma.operationName();
                 break;
             case optionSubtract:
                 result = subtract(number1, number2);
@@ -104,7 +106,8 @@ public class Main {
         }
 
 
-        System.out.println("The result is: " + result);
+//        System.out.println("The result is: " + result);
+        System.out.println(message+result);
 
     }
 
