@@ -1,6 +1,7 @@
 interface Operation {
 
-    public double Operation (double x, double y);
+    public double calculate (double x, double y);
+    public String operationName ();
 }
 
 /*
