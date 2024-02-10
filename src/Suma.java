@@ -14,6 +14,6 @@ public class Suma implements Operation {
 
     @Override
     public String operationName() {
-        return "La suma de esto es: ";
+        return "The sum of this is: ";
     }
 }
