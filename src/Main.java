@@ -55,7 +55,7 @@ public class Main {
     protected static void scannerNumbers() { //ddsr
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Select your option:");
+        System.out.println("Select your option: MALU");
         System.out.println("Sum 0");
         System.out.println("Substract 1");
         System.out.println("Multiply 2");
