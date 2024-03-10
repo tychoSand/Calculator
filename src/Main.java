@@ -1,8 +1,11 @@
 import java.util.Scanner ;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 
 //Calculator Jauregui 0.1
-public class Main {
+public class Main   {
     public int test = 0; //
     public static double number1 = 0;
     public static double number2 = 0;
@@ -16,20 +19,49 @@ public class Main {
     public static final int optionClose = optionPercentage + 1; //ddsr
 
 
+    //Windows Variable
+
+    protected static final boolean optionRezisableWindow = false;
+    protected static final boolean optionVisibleWindow = true;
+
+    protected static JButton [] numbersButton; //bottons from 0 to 9
+
+
     public static void main(String[] args) {
 
-//        testingCode(); //ddsr
-        scannerNumbers(); // DDSR
+        setWindow();
+//        scannerNumbers(); // DDSR
+
         System.out.println("Hola");
     }
 
-    // sum method
-//    protected static double sum(double x, double y) {
-//
-//        return x + y;
-//    }
+    protected static void setWindow () {
 
-    // subtract method
+        numbersButton = new JButton[10];
+        JFrame ventana = new JFrame("Win Button");
+        ventana.setSize(300, 200); // set size
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close config
+        ventana.setLayout(null); // disabled automatic size
+        ventana.setResizable(optionRezisableWindow); //disabled  resize windows by default
+
+        // creating the button
+        JButton boton = new JButton("Starting calculator...");
+        boton.setBounds(100, 50, 120, 30); // set size & position of button
+
+        // add button action
+        boton.addActionListener(e -> {
+//            JOptionPane.showMessageDialog(ventana, "dolping team");
+            scannerNumbers();
+//            ventana.setVisible(!ventana.isVisible());
+        });
+
+        // add button to windows
+        ventana.add(boton);
+
+        // make window visible
+        ventana.setVisible(optionVisibleWindow);
+    }
+
     protected static double subtract(double x, double y) {
 
         return x - y;
