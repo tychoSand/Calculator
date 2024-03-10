@@ -1,5 +1,5 @@
 
-public class Suma implements Operation {
+public abstract class Suma implements Operation {
 
 
     @Override

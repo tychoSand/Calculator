@@ -87,9 +87,7 @@ public class Main {
 
         switch (currentOption) {
             case optionSum:
-                Suma  variableSuma = new Suma();
-                result = variableSuma.calculate(number1,number2);
-                message = variableSuma.operationName();
+                result = subtract(number1, number2);
                 break;
             case optionSubtract:
                 result = subtract(number1, number2);
