@@ -10,7 +10,8 @@ public abstract class Subtract implements Operation {
         return result ;
     }
 
-    @Override
-    public String operationName() {return "The subtract of this is" ; }
+    @Override//km_80
+    public String operationName() {
+        return "The subtract of this is" ; }
 
 }

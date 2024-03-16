@@ -1,5 +1,5 @@
 
-public class Suma implements Operation {
+public abstract class Suma implements Operation {
 
 
     @Override
@@ -14,6 +14,7 @@ public class Suma implements Operation {
 
     @Override
     public String operationName() {
+
         return "The sum of this is: ";
     }
 }
