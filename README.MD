@@ -1,7 +1,7 @@
 # Dolping Calculator
 version 1.0.0
 
-Ivan Jáuregui
+Ivan Jáuregui,
 Damián Soto
 
 Description:
