@@ -1,3 +1,5 @@
+package com.dolping;
+
 interface Operation {
 
     public double calculate (double x, double y);
