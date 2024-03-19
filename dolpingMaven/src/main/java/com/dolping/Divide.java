@@ -1,3 +1,5 @@
+package com.dolping;
+
 public abstract class Divide implements Operation {
 
     @Override//km_80

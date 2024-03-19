@@ -1,3 +1,5 @@
+package com.dolping;
+
 public abstract class Percentage implements Operation {
 
     @Override//km_80

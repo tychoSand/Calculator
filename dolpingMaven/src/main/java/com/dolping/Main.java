@@ -1,3 +1,5 @@
+package com.dolping;
+
 import java.util.Scanner ;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -91,9 +93,9 @@ public class Main   {
         System.out.println("Select your option: MALU");
         System.out.println("Sum 0");
         System.out.println("Substract 1");
-        System.out.println("Multiply 2");
-        System.out.println("Divide 3");
-        System.out.println("Percentage 4");
+        System.out.println("com.dolping.Multiply 2");
+        System.out.println("com.dolping.Divide 3");
+        System.out.println("com.dolping.Percentage 4");
         System.out.println("Close 5");// Closing calculator
         //System.out.println("Exit 6");// Closing program
         currentOption = scan.nextInt();

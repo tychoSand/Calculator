@@ -1,3 +1,5 @@
+package com.dolping;
+
 public abstract class Multiply implements Operation {
 
 
