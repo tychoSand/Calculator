@@ -15,6 +15,7 @@ public abstract class Suma implements Operation {
 
     @Override
     public String operationName() {
+
         return "The sum of this is: ";
     }
 }
