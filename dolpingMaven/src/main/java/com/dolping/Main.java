@@ -31,8 +31,8 @@ public class Main   {
 
     public static void main(String[] args) {
 
-        setWindow();
-//        scannerNumbers(); // DDSR
+//        setWindow();
+        scannerNumbers(); // DDSR
 
         System.out.println("Hola");
     }
