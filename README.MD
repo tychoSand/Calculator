@@ -4,7 +4,7 @@ version 1.0.0
 Ivan Jáuregui,
 Damián Soto
 
-Description:
+Description:ddd
 DolpingCalculator is a simple Java application for performing basic calculations. It utilizes Java 1.8 and Maven for project management.
 
 Installation:
