@@ -1,5 +1,7 @@
 package com.dolping;
 
+import com.dolping.gui.KmCalc;
+
 import java.util.Scanner ;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -33,7 +35,8 @@ public class Main   {
 
 //        setWindow();
         scannerNumbers(); // DDSR
-
+        KmCalc kmCalc = new KmCalc();
+        kmCalc.openGui();
         System.out.println("Hola");
     }
 

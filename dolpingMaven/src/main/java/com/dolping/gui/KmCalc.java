@@ -16,7 +16,7 @@ public class KmCalc { //Km_80
         });
     }
 
-    public static void main (String[] args) {
+    public void openGui () {
         JFrame frame = new JFrame("Cal");
         frame.setContentPane(new KmCalc().panelMain);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
