@@ -3,7 +3,6 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
 public class KmCalc { //Km_80
     private JButton button1;
     private JPanel panelMain;
@@ -25,3 +24,4 @@ public class KmCalc { //Km_80
         frame.setVisible(true);
     }
 }
+265, 60
