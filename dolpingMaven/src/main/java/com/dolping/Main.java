@@ -2,10 +2,8 @@ package com.dolping;
 
 import com.dolping.gui.KmCalc;
 
-import java.util.Scanner ;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+import javax.swing.*;
+import java.util.Scanner;
 
 
 //Calculator Jauregui 0.1
