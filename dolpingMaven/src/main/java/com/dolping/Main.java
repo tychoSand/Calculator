@@ -32,7 +32,7 @@ public class Main   {
     public static void main(String[] args) {
 
 //        setWindow();
-        scannerNumbers(); // DDSR
+//        scannerNumbers(); // DDSR
         KmCalc kmCalc = new KmCalc();
         kmCalc.openGui();
         System.out.println("Hola");
@@ -52,11 +52,11 @@ public class Main   {
         boton.setBounds(100, 50, 120, 30); // set size & position of button
 
         // add button action
-        boton.addActionListener(e -> {
-//            JOptionPane.showMessageDialog(ventana, "dolping team");
-            scannerNumbers();
-//            ventana.setVisible(!ventana.isVisible());
-        });
+//        boton.addActionListener(e -> {
+////            JOptionPane.showMessageDialog(ventana, "dolping team");
+//            scannerNumbers();
+////            ventana.setVisible(!ventana.isVisible());
+//        });
 
         // add button to windows
         ventana.add(boton);

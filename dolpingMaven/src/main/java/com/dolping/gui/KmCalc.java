@@ -6,8 +6,8 @@ import java.io.StringBufferInputStream;
 
 
 public class KmCalc { //Km_80
-    private JPanel KmCalc;
-    private JTextField txtDisplay;
+    private JPanel panelMain;
+    private JTextField textField1;
     private JButton ACButton ;
     private JButton button2  ;
     private JButton button3  ;
@@ -35,167 +35,167 @@ public class KmCalc { //Km_80
 
     public KmCalc() {
         ACButton.addActionListener(new ActionListener()  {
-            @Override
+  
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText("");
+                textField1.setText("");
                 }
             });
 
 
         a7Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a7Button.getText()) ;
+                textField1.setText(textField1.getText() + a7Button.getText()) ;
             }
         });
 
         a8Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a8Button.getText()) ;
+                textField1.setText(textField1.getText() + a8Button.getText()) ;
             }
         });
         a9Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a9Button.getText()) ;
+                textField1.setText(textField1.getText() + a9Button.getText()) ;
             }
         });
         a4Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a4Button.getText()) ;
+                textField1.setText(textField1.getText() + a4Button.getText()) ;
             }
         });
         a5Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a5Button.getText()) ;
+                textField1.setText(textField1.getText() + a5Button.getText()) ;
             }
         });
         a6Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a6Button.getText()) ;
+                textField1.setText(textField1.getText() + a6Button.getText()) ;
             }
         });
         a1Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a1Button.getText()) ;
+                textField1.setText(textField1.getText() + a1Button.getText()) ;
             }
         });
         a2Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a2Button.getText()) ;
+                textField1.setText(textField1.getText() + a2Button.getText()) ;
             }
         });
         a3Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a3Button.getText()) ;
+                textField1.setText(textField1.getText() + a3Button.getText()) ;
             }
         });
         a0Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a0Button.getText()) ;
+                textField1.setText(textField1.getText() + a0Button.getText()) ;
             }
         });
         a00Button.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                txtDisplay.setText(txtDisplay.getText() + a00Button.getText()) ;
+                textField1.setText(textField1.getText() + a00Button.getText()) ;
             }
         });
         button16.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                if (txtDisplay.getText().contains(".")) {
-                    double pm = Double.parseDouble(txtDisplay.getText());
+                if (textField1.getText().contains(".")) {
+                    double pm = Double.parseDouble(textField1.getText());
                     pm = pm * -1;
-                    txtDisplay.setText(String.valueOf(pm));
+                    textField1.setText(String.valueOf(pm));
                 } else {
-                    long PM = Long.parseLong(txtDisplay.getText());
+                    long PM = Long.parseLong(textField1.getText());
                     PM = PM * -1;
-                    txtDisplay.setText(String.valueOf(PM));
+                    textField1.setText(String.valueOf(PM));
                 }
             }
         });
         button20.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                if (!txtDisplay.getText().contains(".")) {
+                if (!textField1.getText().contains(".")) {
 
-                    txtDisplay.setText(txtDisplay.getText() + button20.getText()) ;
+                    textField1.setText(textField1.getText() + button20.getText()) ;
                 }
             }
         });
         button11.addActionListener(new ActionListener() {
-            @Override
+            
             public void actionPerformed(ActionEvent e) {
-                a = Double.parseDouble(txtDisplay.getText()) ;
+                a = Double.parseDouble(textField1.getText()) ;
                 op = "+" ;
-                txtDisplay.setText("") ;
+                textField1.setText("") ;
             }
     });
         button2.addActionListener(new ActionListener() {
-        @Override
+        
         public void actionPerformed(ActionEvent e) {
-            a = Double.parseDouble(txtDisplay.getText()) ;
+            a = Double.parseDouble(textField1.getText()) ;
             op = "-" ;
-            txtDisplay.setText("") ;
+            textField1.setText("") ;
             }
     });
          button3.addActionListener(new ActionListener() {
-        @Override
+        
          public void actionPerformed(ActionEvent e) {
-        a = Double.parseDouble(txtDisplay.getText()) ;
+        a = Double.parseDouble(textField1.getText()) ;
         op = "*" ;
-        txtDisplay.setText("") ;
+        textField1.setText("") ;
             }
     });
         button4.addActionListener(new ActionListener() {
-        @Override
+        
         public void actionPerformed(ActionEvent e) {
-        a = Double.parseDouble(txtDisplay.getText()) ;
+        a = Double.parseDouble(textField1.getText()) ;
         op = "/" ;
-        txtDisplay.setText("") ;
+        textField1.setText("") ;
             }
     });
         button6.addActionListener(new ActionListener() {
-        @Override
+        
         public void actionPerformed(ActionEvent e) {
         String backspace = null ;
 
-        if(txtDisplay.getText().length() > 0)
+        if(textField1.getText().length() > 0)
         {
-            StringBuilder strB = new StringBuilder(txtDisplay.getText()) ;
-            strB.deleteCharAt(txtDisplay.getText().length() - 1) ;
+            StringBuilder strB = new StringBuilder(textField1.getText()) ;
+            strB.deleteCharAt(textField1.getText().length() - 1) ;
             backspace = String.valueOf(strB) ;
-            txtDisplay.setText(backspace) ;
+            textField1.setText(backspace) ;
             }
         }
         });
         button5.addActionListener(new ActionListener() {
-    @Override
+    
     public void actionPerformed (ActionEvent e){
-        b = Double.parseDouble(txtDisplay.getText());
+        b = Double.parseDouble(textField1.getText());
 
         if (op == "+") {
             result = a + b;
-            txtDisplay.setText(String.valueOf(result));
+            textField1.setText(String.valueOf(result));
         } else if (op == "-") {
             result = a - b;
-            txtDisplay.setText(String.valueOf(result));
+            textField1.setText(String.valueOf(result));
         } else if (op == "*") {
         }
         result = a * b;
-        txtDisplay.setText(String.valueOf(result));
+        textField1.setText(String.valueOf(result));
     //} else if (op == "/") {
         result = a / b;
-        txtDisplay.setText(String.valueOf(result));
+        textField1.setText(String.valueOf(result));
         }
     });
 
@@ -203,7 +203,7 @@ public class KmCalc { //Km_80
 
 
         //button1.addActionListener(new ActionListener() {
-           // @Override
+           // 
             //public void actionPerformed(ActionEvent e) {
                 //JOptionPane.showMessageDialog(null,"Hello Guapo");
             //}
@@ -213,12 +213,13 @@ public class KmCalc { //Km_80
 
     public void KmCalc () {
         JFrame frame = new JFrame("KmCalc");
-        frame.setContentPane(new KmCalc().KmCalc);
+        frame.setContentPane(new KmCalc().panelMain);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
 
     public void openGui() {
+        KmCalc();
     }
 }
